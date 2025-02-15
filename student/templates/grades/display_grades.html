@@ -1,0 +1,19 @@
+<h3>Class Average: {{ class_average }}</h3>
+
+<table border="1">
+  <thead>
+    <tr>
+      <th>Student Name</th>
+      <th>Average Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for student, average in student_averages.items %}
+    <tr>
+      <td>{{ student.name }}</td>
+      <td>{{ average }}</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<a href="{% url 'grades:export_grades' %}">Export Grades to Excel</a>

@@ -1,0 +1,21 @@
+# Python bytecode files
+__pycache__/
+*.py[cod]
+
+# Django-specific files
+db.sqlite3
+*.log
+media/
+static/
+
+# Django migrations
+*/migrations/*
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# VSCode specific files
+.vscode/
+

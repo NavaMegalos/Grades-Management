@@ -1,0 +1,15 @@
+{% if data %}
+<div>
+  {% for student_data in data %}
+  <ul>
+    <li>{{ student_data.student_name }}</li>
+    <li>{{ student_data.email }}</li>
+    <li>{{ student_data.subject }}</li>
+    <li>{{ student_data.grade }}</li>
+  </ul>
+  {% endfor %}
+</div>
+<p>Grades added succesfully!</p>
+{% else %}
+<p>Nothing to create.</p>
+{% endif %}
